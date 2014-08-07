@@ -1,7 +1,8 @@
 //*****************************************************************************
 //    Filename: chess.h
 //
-//      Author: David C. Drake (www.davidcdrake.com)
+//      Author: David C. Drake (http://www.davidcdrake.com), with assistance
+//              from Bart Stander (http://cit.dixie.edu/faculty/stander.php).
 //
 // Description: Header file for chess.cpp
 //*****************************************************************************

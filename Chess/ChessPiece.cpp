@@ -1,3 +1,12 @@
+//*****************************************************************************
+//    Filename: ChessPiece.cpp
+//
+//      Author: David C. Drake (http://www.davidcdrake.com), with assistance
+//              from Bart Stander (http://cit.dixie.edu/faculty/stander.php).
+//
+// Description: Method definitions for the ChessPiece class.
+//*****************************************************************************
+
 #include "ChessPiece.h"
 
 ChessPiece::ChessPiece(int type, int color, int row, int col)
