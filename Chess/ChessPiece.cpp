@@ -1,11 +1,10 @@
-//*****************************************************************************
-//    Filename: ChessPiece.cpp
-//
-//      Author: David C. Drake (http://www.davidcdrake.com), with assistance
-//              from Bart Stander (http://cit.dixie.edu/faculty/stander.php).
-//
-// Description: Method definitions for the ChessPiece class.
-//*****************************************************************************
+/******************************************************************************
+   Filename: ChessPiece.cpp
+
+     Author: David C. Drake (http://davidcdrake.com)
+
+Description: Method definitions for the ChessPiece class.
+******************************************************************************/
 
 #include "ChessPiece.h"
 

@@ -1,11 +1,10 @@
-//*****************************************************************************
-//    Filename: ChessPiece.h
-//
-//      Author: David C. Drake (http://www.davidcdrake.com), with assistance
-//              from Bart Stander (http://cit.dixie.edu/faculty/stander.php).
-//
-// Description: Header file for the ChessPiece class.
-//*****************************************************************************
+/******************************************************************************
+   Filename: ChessPiece.h
+
+     Author: David C. Drake (http://davidcdrake.com)
+
+Description: Header file for the ChessPiece class.
+******************************************************************************/
 
 #pragma once
 

@@ -1,14 +1,13 @@
-//*****************************************************************************
-//    Filename: chess.cpp
-//
-//      Author: David C. Drake (http://www.davidcdrake.com), with assistance
-//              from Bart Stander (http://cit.dixie.edu/faculty/stander.php).
-//
-// Description: Displays a chess board, chess pieces, and animations for a few
-//              chess moves. For now, it does not actually simulate a chess
-//              game or allow the user to play chess. (Note: Y is the "up"
-//              direction in this program!)
-//*****************************************************************************
+/******************************************************************************
+   Filename: chess.cpp
+
+     Author: David C. Drake (http://davidcdrake.com), with initial assistance
+             from Dr. Barton Stander (http://cit.dixie.edu/faculty/stander.php)
+
+Description: Displays a chess board, chess pieces, and animations for a few
+             chess moves. For now, it does not actually simulate a chess game
+             or allow the user to play chess. (Note: "Y" is the "up" axis.)
+******************************************************************************/
 
 #include "chess.h"
 
