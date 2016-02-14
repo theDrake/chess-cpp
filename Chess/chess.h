@@ -1,13 +1,13 @@
 /******************************************************************************
    Filename: chess.h
 
-     Author: David C. Drake (http://davidcdrake.com), with initial assistance
-             from Dr. Barton Stander (http://cit.dixie.edu/faculty/stander.php)
+     Author: David C. Drake (http://davidcdrake.com)
 
 Description: Header file for chess.cpp
 ******************************************************************************/
 
-#pragma once
+#ifndef CHESS_H_
+#define CHESS_H_
 
 #include <cstdlib>
 #include <cstdio>
@@ -23,9 +23,11 @@ Description: Header file for chess.cpp
 
 void text_output(double x, double y, char *string);
 
-// "Prototypes" for some color variables defined in chess.cpp:
+// Color variables defined in chess.cpp:
 extern GLfloat redMaterial[];
 extern GLfloat greenMaterial[];
 extern GLfloat brightGreenMaterial[];
 extern GLfloat blueMaterial[];
 extern GLfloat whiteMaterial[];
+
+#endif  // CHESS_H_
