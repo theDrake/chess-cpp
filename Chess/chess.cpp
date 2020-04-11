@@ -1,7 +1,7 @@
 /******************************************************************************
    Filename: chess.cpp
 
-     Author: David C. Drake (http://davidcdrake.com)
+     Author: David C. Drake (https://davidcdrake.com)
 
 Description: Displays a chess board, chess pieces, and animations for a few
              chess moves. For now, it does not actually simulate a chess game

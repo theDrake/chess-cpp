@@ -1,7 +1,7 @@
 /******************************************************************************
    Filename: keys.h
 
-     Author: Rob Bateman, modified by David C. Drake (http://davidcdrake.com)
+     Author: Rob Bateman, modified by David C. Drake (https://davidcdrake.com)
 
 Description: Improves on GLUT's handling of keyboard input.
 ******************************************************************************/

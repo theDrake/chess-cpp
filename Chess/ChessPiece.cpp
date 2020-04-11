@@ -1,7 +1,7 @@
 /******************************************************************************
    Filename: ChessPiece.cpp
 
-     Author: David C. Drake (http://davidcdrake.com)
+     Author: David C. Drake (https://davidcdrake.com)
 
 Description: Method definitions for the ChessPiece class.
 ******************************************************************************/

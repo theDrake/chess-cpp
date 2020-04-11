@@ -1,7 +1,7 @@
 /******************************************************************************
    Filename: ChessPiece.h
 
-     Author: David C. Drake (http://davidcdrake.com)
+     Author: David C. Drake (https://davidcdrake.com)
 
 Description: Header file for the ChessPiece class.
 ******************************************************************************/
