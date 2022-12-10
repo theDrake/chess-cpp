@@ -1,10 +1,10 @@
-/******************************************************************************
+/*******************************************************************************
    Filename: chess.h
 
      Author: David C. Drake (https://davidcdrake.com)
 
-Description: Header file for chess.cpp
-******************************************************************************/
+Description: Header file for chess.cc
+*******************************************************************************/
 
 #ifndef CHESS_H_
 #define CHESS_H_
@@ -17,9 +17,9 @@ Description: Header file for chess.cpp
 #include <cstring>
 #include <fstream>
 #include <iostream>
-#include "glut.h"
+#include <GL/glut.h>
 #include "keys.h"
-#include "ChessPiece.h"
+#include "chess_piece.h"
 
 void text_output(double x, double y, char *string);
 

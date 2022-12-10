@@ -1,12 +1,12 @@
-/******************************************************************************
-   Filename: ChessPiece.cpp
+/*******************************************************************************
+   Filename: ChessPiece.cc
 
      Author: David C. Drake (https://davidcdrake.com)
 
 Description: Method definitions for the ChessPiece class.
-******************************************************************************/
+*******************************************************************************/
 
-#include "ChessPiece.h"
+#include "chess_piece.h"
 
 ChessPiece::ChessPiece(int type, int color, int row, int col) {
   type_ = type;

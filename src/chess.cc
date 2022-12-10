@@ -1,20 +1,20 @@
-/******************************************************************************
-   Filename: chess.cpp
+/*******************************************************************************
+   Filename: chess.cc
 
      Author: David C. Drake (https://davidcdrake.com)
 
 Description: Displays a chess board, chess pieces, and animations for a few
              chess moves. For now, it does not actually simulate a chess game
              or allow the user to play chess. (Note: "Y" is the "up" axis.)
-******************************************************************************/
+*******************************************************************************/
 
 #include "chess.h"
 
 using namespace std;
 
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // Outputs a string of text at the specified location.
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void text_output(double x, double y, char *string) {
   int len, i;
   void *font = GLUT_BITMAP_9_BY_15;
@@ -29,9 +29,9 @@ void text_output(double x, double y, char *string) {
   glDisable(GL_BLEND);
 }
 
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // Given three triangle points, finds the normal vector n[0], n[1], n[2].
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void FindTriangleNormal(double x[], double y[], double z[], double n[]) {
   // Convert the 3 input points to 2 vectors, v1 and v2:
   double v1[3], v2[3];
@@ -53,10 +53,10 @@ void FindTriangleNormal(double x[], double y[], double z[], double n[]) {
   n[2] /= -size;
 }
 
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // Loads a given data file and draws it at its default position.
 // Call glTranslate before calling this to get it in the right place.
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void DrawPiece(char filename[]) {
   // Try to open the file:
   char buffer[200];
@@ -72,8 +72,8 @@ void DrawPiece(char filename[]) {
   int polygons = 0;  // Total polygons in this file.
   do {
     in.getline(buffer, 200);  // Get one line (point) from the file.
-    int count = sscanf_s(buffer, "%lf, %lf, %lf", &(x[verts]), &(y[verts]),
-                         &(z[verts]));
+    int count = sscanf(buffer, "%lf, %lf, %lf", &(x[verts]), &(y[verts]),
+                       &(z[verts]));
     done = in.eof();
     if (!done) {
       if(count == 3) {  // If this line had an x,y,z point.
@@ -100,9 +100,9 @@ void DrawPiece(char filename[]) {
   }
 }
 
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // GLUT callback functions
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 void Interpolate(double t1, double t, double t2,
                  double x1, double &x, double x2) {
@@ -522,27 +522,27 @@ void InitializeMyStuff() {
   //
 
   glNewList(PAWN, GL_COMPILE);
-  DrawPiece("PAWN.POL");
+  DrawPiece("models/PAWN.POL");
   glEndList();
 
   glNewList(KING, GL_COMPILE);
-  DrawPiece("KING.POL");
+  DrawPiece("models/KING.POL");
   glEndList();
 
   glNewList(QUEEN, GL_COMPILE);
-  DrawPiece("QUEEN.POL");
+  DrawPiece("models/QUEEN.POL");
   glEndList();
 
   glNewList(ROOK, GL_COMPILE);
-  DrawPiece("ROOK.POL");
+  DrawPiece("models/ROOK.POL");
   glEndList();
 
   glNewList(BISHOP, GL_COMPILE);
-  DrawPiece("BISHOP.POL");
+  DrawPiece("models/BISHOP.POL");
   glEndList();
 
   glNewList(KNIGHT, GL_COMPILE);
-  DrawPiece("KNIGHT.POL");
+  DrawPiece("models/KNIGHT.POL");
   glEndList();
 }
 

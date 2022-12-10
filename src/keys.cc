@@ -1,17 +1,17 @@
-/******************************************************************************
-   Filename: keys.cpp
+/*******************************************************************************
+   Filename: keys.cc
 
      Author: Rob Bateman, modified by David C. Drake (https://davidcdrake.com)
 
 Description: Improves on GLUT's handling of keyboard input.
-******************************************************************************/
+*******************************************************************************/
 
 #include "keys.h"
 
-// State of all keys (to know if multiple keys are pressed at any given time):
+// state of all keys, to know if multiple keys are pressed at any given time
 bool g_keystates[512] = { false };
 
-// Callback functions:
+// callback functions
 key_func g_upfunc = 0;
 key_func g_downfunc = 0;
 

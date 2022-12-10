@@ -1,16 +1,16 @@
-/******************************************************************************
+/*******************************************************************************
    Filename: keys.h
 
      Author: Rob Bateman, modified by David C. Drake (https://davidcdrake.com)
 
 Description: Improves on GLUT's handling of keyboard input.
-******************************************************************************/
+*******************************************************************************/
 
 #ifndef KEYS_H_
 #define KEYS_H_
 
 #include <cstdlib>
-#include "glut.h"
+#include <GL/glut.h>
 
 #define KEY_F1 (GLUT_KEY_F1 + 256)
 #define KEY_F2 (GLUT_KEY_F2 + 256)
